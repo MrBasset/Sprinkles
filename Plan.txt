@@ -1,0 +1,21 @@
+Create JSON Web Server for updating configuration and monitoring. This will plug into .NET app that will manage the controller (running WPF or .NET Web Core I haven't decided).
+
+Write Configuration to JSON file on SD card (supposed to come with ethernet sheild)
+
+Use event framework to manage events.
+
+Event Timer to check sensors
+Event listener for web request
+Event listener for control messages for servos
+
+JSON API
+/api/v1/health HEAD ??
+/api/v1/status/sensor_<x>/all GET
+/api/v1/configuration/sensor_<X> PUT/GET
+
+{
+	"DutyCycleSeconds" : "30",
+    "StartingDurationSeconds" : "2",
+    "MinimumThresholdTempCelcius" : "22",
+    "MaximumThresholdTempCelcius" : "35"
+}
