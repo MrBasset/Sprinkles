@@ -1,3 +1,10 @@
+!! important !!
+
+If Dave ever needs the code again, it isn't this project but one called TestingTempProbe. This code is an attempt at a re-write for the code, that doesn't work because the eventually library is busted.
+
+
+************
+
 Create JSON Web Server for updating configuration and monitoring. This will plug into .NET app that will manage the controller (running WPF or .NET Web Core I haven't decided).
 
 Write Configuration to JSON file on SD card (supposed to come with ethernet sheild)
